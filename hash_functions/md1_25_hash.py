@@ -16,16 +16,6 @@ def md125(s: str) -> str:
 
 def generate_md125_collisions() -> (str, str):
     '''
-    This is the fast version of md125 collision (used to avoid the computational
-    limits of repl.it interpreter.
-    '''
-    return ('nakamotobl7q6vrfgpahzhsk5sdqg6u7b6empfefmnuoj2',
-            'nakamotoph5n2kcjwf2wiova6ycotev011xibnr0i870ilupz5jng9pr5hmfaar'
-            )
-
-
-def generate_md125_collisions_slow() -> (str, str):
-    '''
     Slower version of md125 collision generator. It randomly generates a string,
     with prefix 'nakamoto', generates its md125 hash, inserts in a dict till a
     match is found.
@@ -47,7 +37,5 @@ def generate_md125_collisions_slow() -> (str, str):
 
 
 if __name__ == '__main__':
-    print ('Hard-coded collision strings: ')
-    print (generate_md125_collisions())
     print ('Randomly generated collision strings: ')
-    print (generate_md125_collisions_slow())
+    print (generate_md125_collisions())
