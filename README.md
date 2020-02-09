@@ -10,3 +10,7 @@ This is the repository containing Python code samples/exercises/tests from https
 * **Merkel Trees:** A demonstration of constructing Merkel Trees and proof of inclusion using them.
   * Run Merkle Tree generator: `cd merkle_tree && python3 word_merkle_tree.py`
   * Run tests: `cd merkle_tree && python3 word_merkle_tree_test.py`
+
+* **Hashcash:** A demonstration of minting and validating Hashcash token.
+  * Run token minter/validator: `cd hashcash && python3 hashcash.py`
+  * Run tests: `cd hashcash && python3 hashcash_test.py`
